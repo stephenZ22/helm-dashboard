@@ -74,7 +74,7 @@ export default function Header() {
                 exclude={["tab"]}
                 className={getBtnStyle("installed")}
               >
-                Installed
+                已安装
               </LinkWithSearchParams>
             </li>
             <li>
@@ -84,7 +84,7 @@ export default function Header() {
                 end={false}
                 className={getBtnStyle("repository")}
               >
-                Repository
+                仓库
               </LinkWithSearchParams>
             </li>
             <li>
