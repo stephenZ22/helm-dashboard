@@ -38,7 +38,7 @@ function ChartViewer({ chart }: ChartViewerProps) {
             }`}
             onClick={() => setShowInstallModal(true)}
           >
-            Install
+            安装
           </button>
         </span>
       </div>

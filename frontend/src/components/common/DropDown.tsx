@@ -64,7 +64,7 @@ function DropDown({ items }: DropDownProps) {
           }}
           className="flex items-center justify-between"
         >
-          Help
+          帮助
           <img src={ArrowDownIcon} className="ml-2 w-[10px] h-[10px]" />
         </button>
       </div>

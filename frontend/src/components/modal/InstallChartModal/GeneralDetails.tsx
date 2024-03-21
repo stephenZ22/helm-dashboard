@@ -28,7 +28,7 @@ export const GeneralDetails = ({
   return (
     <div className="flex gap-8">
       <div>
-        <h4 className="text-lg">Release name:</h4>
+        <h4 className="text-lg">应用名称:</h4>
         <input
           className={inputClassName}
           value={releaseName}
@@ -37,7 +37,7 @@ export const GeneralDetails = ({
         ></input>
       </div>
       <div>
-        <h4 className="text-lg">Namespace (optional):</h4>
+        <h4 className="text-lg">命名空间 (optional):</h4>
         <input
           className={inputClassName}
           value={namespaceInputValue}
@@ -47,7 +47,7 @@ export const GeneralDetails = ({
       </div>
       {context ? (
         <div className="flex">
-          <h4 className="text-lg">Cluster:</h4>
+          <h4 className="text-lg">集群:</h4>
           <p className="text-lg">{context}</p>
         </div>
       ) : null}

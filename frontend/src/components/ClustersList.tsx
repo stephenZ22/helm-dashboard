@@ -101,7 +101,7 @@ function ClustersList({
     <div className="bg-white flex flex-col p-2 rounded custom-shadow text-cluster-list w-48 m-5 h-fit pb-4 custom-">
       {!clusterMode ? (
         <>
-          <label className="font-bold">Clusters</label>
+          <label className="font-bold">集群</label>
           {clusters
             ?.sort((a, b) =>
               getCleanClusterName(a.Name).localeCompare(
@@ -134,7 +134,7 @@ function ClustersList({
         </>
       ) : null}
 
-      <label className="font-bold mt-4">Namespaces</label>
+      <label className="font-bold mt-4">命名空间</label>
       {namespaces
         ?.sort((a, b) => a.name.localeCompare(b.name))
         ?.map((namespace) => (

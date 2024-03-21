@@ -37,14 +37,14 @@ export const ManifestDiff = ({ diff, isLoading, error }: ManifestDiffProps) => {
     return (
       <div className="flex text-lg items-end">
         <Spinner />
-        Calculating diff...
+        计算 差异...
       </div>
     );
   }
 
   return (
     <div>
-      <h4 className="text-xl">Manifest changes:</h4>
+      <h4 className="text-xl">Manifest 变更:</h4>
 
       {error ? (
         <p className="text-red-600 text-lg">
@@ -57,7 +57,7 @@ export const ManifestDiff = ({ diff, isLoading, error }: ManifestDiffProps) => {
         ></div>
       ) : (
         <pre className="font-roboto text-base">
-          No changes will happen to the cluster
+          未发生变更
         </pre>
       )}
     </div>

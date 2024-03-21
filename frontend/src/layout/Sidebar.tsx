@@ -3,7 +3,7 @@ import "../App.css";
 function Sidebar(): JSX.Element {
   return (
     <div className="card-left">
-      <h2>Repositories</h2>
+      <h2>仓库</h2>
       <form>
         <div className="options">
           <label>
@@ -18,7 +18,7 @@ function Sidebar(): JSX.Element {
           </label>
         </div>
       </form>
-      <button className="btn">Add Repository</button>
+      <button className="btn">新增仓库</button>
       <p>Some text that describes chart</p>
     </div>
   );

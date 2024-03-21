@@ -25,14 +25,6 @@ export default function Header() {
 
   const location = useLocation();
 
-  const openSupportChat = () => {
-    window.open("https://app.slack.com/client/T03Q4H8PCRW", "_blank");
-  };
-
-  const openProjectPage = () => {
-    window.open("https://github.com/komodorio/helm-dashboard", "_blank");
-  };
-
   const resetCache = async () => {
     try {
       await apiService.fetchWithDefaults("/api/cache", {
@@ -92,13 +84,13 @@ export default function Header() {
                 items={[
                   {
                     id: "1",
-                    text: "Reset Cache",
+                    text: "重置浏览器緩存",
                     icon: <BsArrowRepeat />,
                     onClick: resetCache,
                   },
                   {
                     id: "2",
-                    text: "REST API",
+                    text: "API文档",
                     icon: <BsBraces />,
                     onClick: openAPI,
                   },

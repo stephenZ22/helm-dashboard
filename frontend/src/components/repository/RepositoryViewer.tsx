@@ -85,7 +85,7 @@ function RepositoryViewer({ repository }: RepositoryViewerProps) {
 
   return (
     <div className="flex flex-col p-6 gap-3 bg-white custom-shadow border rounded-md">
-      <span className="text-muted font-bold text-xs">REPOSITORY</span>
+      <span className="text-muted font-bold text-xs">仓库</span>
       <div className="flex justify-between">
         <span className="text-dark text-3xl font-semibold">
           {repository?.name}
@@ -100,7 +100,7 @@ function RepositoryViewer({ repository }: RepositoryViewerProps) {
             >
               <span className="h-8 flex items-center gap-2 bg-white border border-gray-300 px-5 py-1 text-sm font-semibold rounded">
                 {update.isLoading ? <Spinner size={4} /> : <BsArrowRepeat />}
-                Update
+                编辑
               </span>
             </button>
             <button
@@ -110,7 +110,7 @@ function RepositoryViewer({ repository }: RepositoryViewerProps) {
             >
               <span className="h-8 flex items-center gap-2 bg-white border border-gray-300 px-5 py-1 text-sm font-semibold rounded">
                 {isRemoveLoading ? <Spinner size={4} /> : <BsTrash3 />}
-                Remove
+                移除
               </span>
             </button>
           </div>
@@ -128,9 +128,9 @@ function RepositoryViewer({ repository }: RepositoryViewerProps) {
       </span>
 
       <div className="bg-secondary grid grid-cols-10 text-xs font-bold p-2 px-4 mt-4 rounded-md">
-        <span className="col-span-2">CHART NAME</span>
-        <span className="col-span-6">DESCRIPTION</span>
-        <span className="col-span-1 text-center">VERSION</span>
+        <span className="col-span-2">CHART 名称</span>
+        <span className="col-span-6">说明</span>
+        <span className="col-span-1 text-center">版本</span>
         <span className="col-span-1 text-center"></span>
       </div>
       {isLoading ? (

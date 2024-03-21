@@ -31,7 +31,7 @@ function RepositoriesList({
   return (
     <>
       <div className="h-fit bg-white w-72 flex flex-col p-3 rounded custom-shadow text-dark gap-3">
-        <label className="font-bold">Repositories</label>
+        <label className="font-bold">仓库</label>
         <div className="flex flex-col gap-1">
           {repositories?.map((repository) => (
             <span
@@ -63,7 +63,7 @@ function RepositoriesList({
           className="h-8 w-fit flex items-center gap-2 border rounded text-muted border-gray-300 px-3 py-1 text-sm font-semibold"
           onClick={() => setShowAddRepositoryModal(true)}
         >
-          + Add Repository
+          + 新增仓库
         </button>
         <p className="text-xs">
           Charts developers: you can also add local directories as chart source.

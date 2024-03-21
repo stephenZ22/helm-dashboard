@@ -120,7 +120,7 @@ export default function InstalledPackageCard({
             )}
           </div>
           <div className="col-span-2 text-muted flex flex-col items">
-            <span>CHART VERSION</span>
+            <span>CHART 版本</span>
             {(canUpgrade || installRepoSuggestion) && (
               <div
                 className="text-upgradable flex flex-row items-center gap-1 font-bold"
@@ -129,20 +129,20 @@ export default function InstalledPackageCard({
                 {canUpgrade && !installRepoSuggestion ? (
                   <>
                     <BsArrowUpCircleFill />
-                    UPGRADE
+                    升级
                   </>
                 ) : (
                   <>
                     <BsPlusCircleFill />
-                    ADD REPO
+                    添加仓库
                   </>
                 )}
               </div>
             )}
           </div>
-          <div className="col-span-1 text-muted">REVISION</div>
-          <div className="col-span-1 text-muted">NAMESPACE</div>
-          <div className="col-span-1 text-muted">UPDATED</div>
+          <div className="col-span-1 text-muted">修正</div>
+          <div className="col-span-1 text-muted">命名空间</div>
+          <div className="col-span-1 text-muted">已更新</div>
         </div>
       </div>
     </div>

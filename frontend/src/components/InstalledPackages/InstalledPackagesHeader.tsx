@@ -25,7 +25,7 @@ export default function InstalledPackagesHeader({
             alt="Helm-DashBoard"
             className="display-inline h-12 ml-3 mr-3 w-[28px] "
           />
-          <h2 className="display-inline font-bold text-base ">{`Installed Charts (${
+          <h2 className="display-inline font-bold text-base ">{`已安裝 Charts (${
             numOfPackages || "0"
           })`}</h2>
         </div>

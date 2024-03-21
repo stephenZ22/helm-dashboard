@@ -62,7 +62,7 @@ export const VersionToInstall: React.FC<{
     <div className="flex gap-2 text-xl items-center">
       {versions?.length && (selectedOption || initOpt) ? (
         <>
-          Version to install:{" "}
+          安装版本:{" "}
           <Select
             className="basic-single cursor-pointer min-w-[272px]"
             classNamePrefix="select"

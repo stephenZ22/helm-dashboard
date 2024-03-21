@@ -63,7 +63,7 @@ function AddRepositoryModal({ isOpen, onClose }: AddRepositoryModalProps) {
       })
       .catch((error) => {
         alertError.setShowErrorModal({
-          title: "Failed to add repo",
+          title: "添加仓库失败",
           msg: error.message,
         });
       })
@@ -75,7 +75,7 @@ function AddRepositoryModal({ isOpen, onClose }: AddRepositoryModalProps) {
   return (
     <Modal
       containerClassNames={"w-full max-w-5xl"}
-      title="Add Chart Repository"
+      title="新增 Chart 仓库"
       isOpen={isOpen}
       onClose={onClose}
       bottomContent={
@@ -87,14 +87,14 @@ function AddRepositoryModal({ isOpen, onClose }: AddRepositoryModalProps) {
             disabled={isLoading}
           >
             {isLoading && <Spinner size={4} />}
-            Add Repository
+            添加 仓库
           </button>
         </div>
       }
     >
       <div className="flex gap-x-3">
         <label className="flex-1" htmlFor="name">
-          <div className="mb-2 text-sm require">Name</div>
+          <div className="mb-2 text-sm require">名称</div>
           <input
             value={formData.name}
             onChange={(e) =>
@@ -107,7 +107,7 @@ function AddRepositoryModal({ isOpen, onClose }: AddRepositoryModalProps) {
             id="name"
             data-cy="add-chart-name"
             type="text"
-            placeholder="Komodorio"
+            placeholder="weiyun-admin"
             className="rounded-lg p-2 w-full border border-gray-300 focus:outline-none focus:border-sky-500 input-box-shadow"
           />
         </label>
@@ -125,14 +125,14 @@ function AddRepositoryModal({ isOpen, onClose }: AddRepositoryModalProps) {
             id="url"
             data-cy="add-chart-url"
             type="text"
-            placeholder="https://helm-charts.komodor.io"
+            placeholder="http://weiyun.helm.io"
             className="rounded-lg p-2 w-full border border-gray-300  focus:outline-none focus:border-sky-500 input-box-shadow"
           />
         </label>
       </div>
       <div className="flex gap-x-3">
         <label className="flex-1 " htmlFor="username">
-          <div className="mb-2 text-sm">Username</div>
+          <div className="mb-2 text-sm">用户名</div>
           <input
             onChange={(e) =>
               setFormData({
@@ -147,7 +147,7 @@ function AddRepositoryModal({ isOpen, onClose }: AddRepositoryModalProps) {
           />
         </label>
         <label className="flex-1" htmlFor="password">
-          <div className="mb-2 text-sm">Password</div>
+          <div className="mb-2 text-sm">密码</div>
           <input
             onChange={(e) =>
               setFormData({
